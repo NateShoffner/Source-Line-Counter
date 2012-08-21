@@ -58,7 +58,7 @@ namespace SourceLineCounter.Forms
             this.progressBar1 = new System.Windows.Forms.ProgressBar();
             this.filebtn = new System.Windows.Forms.Button();
             this.profilesbtn = new System.Windows.Forms.Button();
-            this.profileList = new ProfileListBox();
+            this.profileList = new SourceLineCounter.Controls.ProfileListBox();
             this.selectbtn = new System.Windows.Forms.Button();
             this.unselectbtn = new System.Windows.Forms.Button();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
@@ -369,6 +369,7 @@ namespace SourceLineCounter.Forms
             // 
             this.profileList.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.profileList.Location = new System.Drawing.Point(333, 25);
+            this.profileList.MultiSelect = true;
             this.profileList.Name = "profileList";
             this.profileList.Size = new System.Drawing.Size(186, 82);
             this.profileList.TabIndex = 33;
@@ -592,7 +593,6 @@ namespace SourceLineCounter.Forms
             this.txtPaths.ScrollBars = System.Windows.Forms.ScrollBars.Both;
             this.txtPaths.Size = new System.Drawing.Size(315, 86);
             this.txtPaths.TabIndex = 18;
-            this.txtPaths.Text = "D:\\Visual Studio\\Projects\\Tabster\\Tabster\\Program.cs";
             this.txtPaths.WordWrap = false;
             this.txtPaths.TextChanged += new System.EventHandler(this.txtPaths_TextChanged);
             // 
